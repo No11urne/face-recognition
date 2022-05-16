@@ -23,21 +23,21 @@ from models.train import (
 
 # train resnet50 on vgg_face2 & adversarial images
 ############################################################################
-attack_name = 'pgd'
+#attack_name = 'pgd'
 ##attack_name = 'deepfool'
 # # attack_name = 'fgm'
 # # attack_name = 'cw'
 
-loss_name = 'npair'
+#loss_name = 'npair'
 # # loss_name = 'triplet'
 # # loss_name = 'arcface'
 # # loss_name = 'sphereface'
-train_model_with_adversarial(attack_name=attack_name,
-                              loss_name=loss_name,
-                              num_epochs=100,
-                              batch_size=64,
-                              query_size=0.75,
-                              model_name='resnet_with_adversarial')
+#train_model_with_adversarial(attack_name=attack_name,
+#                              loss_name=loss_name,
+#                              num_epochs=100,
+#                              batch_size=64,
+#                              query_size=0.75,
+#                              model_name='resnet_with_adversarial')
 ############################################################################
 
 # train autoencoder
